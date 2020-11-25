@@ -28,3 +28,5 @@ join, on
 #### Question 3: Can you give an example of primary key in this DB? And a foreign key?
 - movies.id is a primary key
 - director_id in movies is a foreign key
+#### Question 4: What kind of relation links the 2 tables?
+- one to many: one director can have many movies
