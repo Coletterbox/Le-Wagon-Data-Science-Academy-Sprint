@@ -38,7 +38,7 @@ SELECT vote_average, COUNT(*) AS vote_average_count FROM movies WHERE release_da
 SELECT movies.original_title, directors.name FROM movies INNER JOIN directors ON movies.director_id=directors.id WHERE directors.name="Brenda Chapman";
 
 -- Question 12: Whose director made the most movies?
-SELECT directors.name, COUNT(*) AS movie_count FROM movies INNER JOIN directors ON movies.director_id=directors.id GROUP BY directors.name ORDER BY movie_count DESC limit 1;
+SELECT directors.name, COUNT(*) AS movie_count FROM movies INNER JOIN directors ON movies.director_id=directors.id GROUP BY directors.name ORDER BY movie_count DESC LIMIT 1;
 
 -- Question 13: Whose director is the most bankable?
 SELECT directors.name, SUM(movies.revenue) AS total_revenue_per_director FROM movies INNER JOIN directors ON movies.director_id=directors.id ORDER BY total_revenue_per_director DESC LIMIT 1;
