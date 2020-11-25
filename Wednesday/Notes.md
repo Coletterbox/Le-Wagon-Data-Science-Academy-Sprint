@@ -1,5 +1,7 @@
 ## SQL Sprint
 
+### Intro
+
 relational database\
 structured query language\
 unique identifiers\
@@ -16,3 +18,10 @@ group by\
 as\
 order by count(*) works on SQLite, but must use alias usually\
 join, on
+
+### DB design
+
+#### Question 1: How many tables composes the movies.sqlite DB?
+- two: directors, movies
+#### Question 2: How many columns are in the table movies?
+- thirteen
